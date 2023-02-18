@@ -1,0 +1,202 @@
+/*theme colors -- R G B Brightness
+blue: #3F6F8C  -- 63, 111, 140, 55
+gray: #97A3A6 -- 151, 163, 166, 65
+light gray: #D2D8D9 -- 210, 216, 217, 85
+orange: #A66038 -- 166, 96, 56, 65
+red: #732922 -- 115, 41, 34, 45
+*/
+html{
+  --themeBlue: #3F6F8C;
+  --themeGray: #97A3A6;
+  --themeRed: #732922;
+  --themeLightGray: #D2D8D9;
+  --themeOrange: #A66038;
+  --themeTextLight: white;
+  --themeTextDark: black;
+}
+body, html{
+  padding: 0;
+  margin: 0;
+  background-color: var(--themeBlue);
+  color: var(--themeTextLight);
+  font-family: Arial, Helvetica, sans-serif;
+}
+header {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+
+}
+header img{
+  width: 100%;
+}
+nav {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+}
+label {
+  font-size: 2em;
+  cursor: pointer;
+  display: block;
+}
+input[type="checkbox"] {
+  display: none;
+}
+input[type="checkbox"]:checked ~ div {
+  display: flex;
+}
+header nav div {
+  list-style: none;
+  margin: 0;
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  background-color:white;
+  width: 100%;
+  height: 200%;
+  padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+  display: none;
+}
+header nav div a {
+  padding: 0.25rem 1rem 0.25rem 1rem;
+  text-decoration: none;
+  color: var(--themeTextDark);
+  font-weight: bold;
+}
+
+header nav div a:hover {
+  background-color: var(--themeGray);
+}
+
+        /* For mobile phones: */
+        /*mobile first*/
+    .Footer {
+      background-color: rgba(210, 216, 217, 0.8);
+      text-align: center;
+      padding: 10px;
+      margin-top: 7px;
+    }
+    .Footer a{
+        margin:5%;
+    }
+    .Footer a img{
+      height: 38px;
+    }
+
+    
+      body {
+          font-family: Verdana;
+          color: #aaaaaa;
+      }
+
+      .Welcome, .AboutMe {
+          padding: 15px;
+          text-align: center;
+      }
+
+      * {
+          box-sizing: border-box;
+      }
+
+      /*elke rij plaats je in de klasse clearfix*/
+      .clearfix::before, .clearfix::after {
+          content: " ";
+          display: table;
+      }
+
+      .clearfix::after {
+          clear: both;
+      }
+
+      .Main {
+          float: left;
+          width: 100%;
+          padding: 0 20px;
+          text-align: center;
+      }
+
+      .Left .Right {
+          background-color: #e5e5e5;
+          width: 100%;
+          margin-top: 7px;
+      }
+      .Left{
+        text-align: center;
+      }
+
+      .ProfilePicture{
+        max-width: 50%;
+      }
+
+      .Right p{
+        float:left;
+        text-align: center;
+      }
+
+@media  only screen and (min-width: 600px) {
+  
+  label {
+    display: none;
+  }
+  nav{
+    justify-content: space-around;
+  }
+  input[type="checkbox"]:checked ~ div {
+    display: contents;
+  }
+  header nav, header nav div{
+    padding: 0;
+    margin:0;
+  }
+
+  header nav div a {
+    border: 1px solid transparent;
+    width: 20%;
+    text-align: center;
+    padding: 0.75rem 0 0 0;
+    height: 3rem;
+  }
+  header nav div a:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid black;
+  }
+
+  .Left{
+    width: 45%;
+    float:left;
+    text-align: right;
+  }
+  .Right{
+    width: 55%;
+    float:right;
+    text-align: left;
+  }
+  .ProfilePicture{
+    text-align: right;
+    min-width: 250px;
+    width: 30%;
+  }
+  .Right p{
+    text-align: left;
+    padding-left: 10px;
+    width:50%;
+  }
+
+}
+
+
+
+
+
+
+
+  
+
+
+

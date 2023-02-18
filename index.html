@@ -4,75 +4,86 @@
 
 
 <header>
-    <link rel="stylesheet" href="css/styles.css" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/index.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
 
-        <title>Stijn Janssens - Home</title>
-        
-        <img src="../website/img/PSA.png" alt="cover">
+    <title>Stijn Janssens - Home</title>
+
+    <img src="../website/img/PSA.png" alt="cover">
     <nav>
-      <label for="toggle">&#9776;</label>
-      <input type="checkbox" id="toggle"/>
-      <div>
-        <a href="#">HOME</a>
-        <a href="#">CV</a>
-        <a href="#">PROJECTS</a>
-        <a href="#">ANIMATIONS</a>
-        <a href="#">CONTACT</a>
-      </div>
+        <label for="toggle">&#9776;</label>
+        <input type="checkbox" id="toggle" />
+        <div>
+            <a href="#Home">HOME</a>
+            <a href="#CV">CV</a>
+            <a href="#PROJECTS">PROJECTS</a>
+            <a href="#ANIMATIONS">ANIMATIONS</a>
+            <a href="#CONTACT">CONTACT</a>
+        </div>
     </nav>
-    
-  </header>
+
+</header>
 
 
-    <body>
-        <div class="Welcome">
-            <h1 class="h1Welcome">Welcome to my website.</h1>
-            <p class="pWelcome">
+<body>
+    <div class="Welcome">
+        <h1>Welcome</h1>
+    </div>
+
+    <div class="Row">
+        <div class="Main">
+            <p>
                 Welcome to my website. This website was built as a portfolio.<br>
                 The purpose of this website is to put the acquired html and CSS knowledge into practice.<br>
                 Feel free to take a look at the other pages.
             </p>
         </div>
-        
-        <div class="AboutMe">
-            <h1 class="h1AboutMe">About me</h1>    
-            <img class="imgAboutMe"src="../website/img/profilePicture.jpg" alt="picture of me" >
-            <p class="pAboutMe">
+    </div>
+
+    <div class="AboutMe">
+        <h1>About me</h1>
+    </div>
+
+    <div class="clearfix">
+        <div class="Left">
+            <img class="ProfilePicture" src="../website/img/profilePicture.jpg" alt="picture of me" >
+        </div>
+        <div class="Right">
+            <p>
                 Hello, I'm Stijn Janssens.<br>
                 <br>Around the age of 13, my passion for electronics and computer science was sparked by the open day at my high school.
                 <br>When I visited the electronics department, I was immediately fascinated by the possibilities of hardware in combination with software.
                 <br>This is why I chose the electronics course and continued it in higher education.
                 <br><br>After college I ended up at Camco Technologies where I am still employed today.
-            </p>  
+            </p>
         </div>
-        
+    </div>
 
-    <footer>
-        <nav>
-            <a href="https://www.linkedin.com/in/stijn-janssens-aarschot/" target="_blank"><img src="../website/img/linkedin_link_black.png" alt="Link to my linkedin profile" ></a>
-            <a href="https://www.facebook.com/stijn.janssens.54" target="_blank"><img src="../website/img/facebook_link_black.png" alt="Link to my Facebook profile" ></a>
-        </nav>
-    </footer>
+    <div class="Footer">
+        <a href="https://www.linkedin.com/in/stijn-janssens-aarschot/" target="_blank"><img src="../website/img/In-White-72.png" alt="Link to my linkedin profile" ></a>
+        <a href="https://www.facebook.com/stijn.janssens.54" target="_blank"><img src="../website/img/f_logo_RGB-White_72.png" alt="Link to my Facebook profile" ></a>
+        <a href="https://github.com/JanssensStijn" target="_blank"><img src="../website/img/github-mark-white.png" alt="Link to my GitHub profile" ></a>
+    </div>
+
 </body>
 
 <script>
-    window.addEventListener("load", function() {
+    window.addEventListener("load", function () {
         var checkbox = document.getElementById("toggle");
         if (window.innerWidth >= 600) {
             checkbox.checked = true;
         }
-        else{
+        else {
             checkbox.checked = false;
         }
     });
-    window.addEventListener("resize", function() {
+    window.addEventListener("resize", function () {
         var checkbox = document.getElementById("toggle");
         if (window.innerWidth >= 600) {
             checkbox.checked = true;
         }
-        else{
+        else {
             checkbox.checked = false;
         }
     });
